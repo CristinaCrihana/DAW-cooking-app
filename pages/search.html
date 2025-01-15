@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Recipes - Recipie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/search.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- header section-->
+        <header class="page-header">
+            <h1>Find Your Perfect Recipe</h1>
+            <p>Discover dishes that match your taste and dietary preferences</p>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search recipes..." class="search-input">
+        </div>
+        
+        <div class="search-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h2>Cooking Time</h2>
+                    <select id="maxReadyTime">
+                        <option value="">Any Time</option>
+                        <option value="15">15 minutes or less</option>
+                        <option value="30">30 minutes or less</option>
+                        <option value="45">45 minutes or less</option>
+                        <option value="60">60 minutes or less</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h2>Cuisine</h2>
+                    <select id="cuisine">
+                        <option value="">Any Cuisine</option>
+                        <option value="italian">Italian</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="indian">Indian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="thai">Thai</option>
+                        <option value="french">French</option>
+                        <option value="mediterranean">Mediterranean</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h2>Diet</h2>
+                    <select id="diet">
+                        <option value="">Any Diet</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="gluten-free">Gluten Free</option>
+                        <option value="ketogenic">Ketogenic</option>
+                        <option value="paleo">Paleo</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h2>Intolerances</h2>
+                    <select id="intolerances">
+                        <option value="">None</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="egg">Egg</option>
+                        <option value="gluten">Gluten</option>
+                        <option value="peanut">Peanut</option>
+                        <option value="seafood">Seafood</option>
+                        <option value="shellfish">Shellfish</option>
+                    </select>
+                </div>
+
+                <button onclick="searchRecipes()" class="apply-filters">
+                    Apply Filters
+                </button>
+            </aside>
+
+            <!-- Results Section -->
+            <main class="results-section">
+                <div id="results-count" class="results-count"></div>
+                <div id="recipe-results" class="recipe-grid">
+                    <!-- recipes will appear here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

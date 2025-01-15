@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipie</title>
+    <link href="./css/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Poppins] bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-primary">
+                        Recipie
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-dark hover:text-primary px-3 py-2 font-medium">Home</a>
+                    <a href="/pages/random.html" class="text-dark hover:text-primary px-3 py-2 font-medium">Random</a>
+                    <a href="/pages/search.html" class="text-dark hover:text-primary px-3 py-2 font-medium">Search</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-dark mb-4">
+                    Discover Amazing Recipes
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Explore thousands of delicious recipes from around the world
+                </p>
+                <a href="/pages/search.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-medium inline-block transition-colors">
+                    Start Cooking
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-dark mb-8 text-center">Featured Recipes</h2>
+            <div id="featured-recipes" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recipe cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; 2024 Recipie</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
