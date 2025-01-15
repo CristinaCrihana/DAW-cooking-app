@@ -81,7 +81,7 @@ function createRecipeCard(recipe) {
     card.className = 'recipe-card';
     
     card.addEventListener('click', () => {
-        window.location.href = `/pages/recipe-details.html?id=${recipe.id}`;
+        window.location.href = `./pages/recipe-details.html?id=${recipe.id}`;
     });
     
     card.innerHTML = `

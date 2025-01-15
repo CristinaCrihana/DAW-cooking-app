@@ -15,7 +15,7 @@ function createRecipeCard(recipe) {
     card.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer';
 
     card.addEventListener('click', () => {
-        window.location.href = `/pages/recipe-details.html?id=${recipe.id}`;
+        window.location.href = `./pages/recipe-details.html?id=${recipe.id}`;
     });
     
     card.innerHTML = `
