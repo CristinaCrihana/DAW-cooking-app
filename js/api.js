@@ -1,4 +1,4 @@
-const API_KEY = '3f20e48be72b45419b7bd43ff2102d22';
+const API_KEY = '67050f3767fe43519c62411f8a055f69';
 const BASE_URL = 'https://api.spoonacular.com/recipes';
 
 async function getRandomRecipes(number = 6) {
